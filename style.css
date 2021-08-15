@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("https://images.pexels.com/photos/1655166/pexels-photo-1655166.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+    no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.holder {
+  display: grid;
+  font-family: "Inconsolata", monospace;
+  place-items: center;
+}
+
+.holder:before,
+.holder:after {
+  animation: orbit 5s linear infinite;
+  border-radius: 50%;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  content: "";
+  height: 150px;
+  position: absolute;
+  width: 150px;
+}
+
+.holder:before {
+  background: #ffe897;
+  background: -moz-radial-gradient(top right, #ffe897, #f98a05);
+  background: radial-gradient(to bottom left, #ffe897, #f98a05);
+  background: -webkit-radial-gradient(top right, #ffe897, #f98a05);
+}
+
+.holder:after {
+  animation-delay: 2.5s;
+  background: #e0e793;
+  background: -moz-radial-gradient(bottom right, #e0e793, #6dd0f1);
+  background: radial-gradient(to top left, #e0e793, #6dd0f1);
+  background: -webkit-radial-gradient(bottom right, #e0e793, #6dd0f1);
+  right: 0;
+  top: 100;
+  z-index: -1;
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}
+
+#cuaca {
+  padding-top: 30px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border-radius: 7%;
+}

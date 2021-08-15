@@ -1,0 +1,23 @@
+{
+  "name": "Essentials",
+  "short_name": "Essentials",
+  "description": "A readable Hacker News app.",
+  "icons": [
+    {
+      "src": "/img/icons-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#233b69",
+  "background_color": "blue"
+}
